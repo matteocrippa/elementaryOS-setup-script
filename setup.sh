@@ -1,7 +1,7 @@
 # Update
 sudo apt update
-sudo apt upgrade
-sudo apt dist-upgrade
+sudo apt -y upgrade
+sudo apt -y dist-upgrade
 
 # Vscodium
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
