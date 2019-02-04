@@ -5,13 +5,13 @@ sudo apt -y dist-upgrade
 
 # Vscodium
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
-sudo echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' >> /etc/apt/sources.list
+echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' | sudo tee -a /etc/apt/sources.list
 sudo apt update
 sudo apt -y install vscodium
 
 # Enpass
 wget -O - https://apt.enpass.io/keys/enpass-linux.key | sudo apt-key add -
-sudo echo "deb https://apt.enpass.io/ stable main" >> /etc/apt/sources.list
+echo 'deb https://apt.enpass.io/ stable main' | sudo tee -a /etc/apt/sources.list
 sudo apt update
 sudo apt -y install enpass
   
@@ -21,7 +21,7 @@ sudo apt install -y nodejs
 
 # ZSH shell
 sudo apt -y install zsh fonts-hack-ttf
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 sudo npm i -g spaceship-prompt --unsafe-perm=true --allow-root
 
 # Install codecs
