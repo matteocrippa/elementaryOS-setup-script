@@ -13,7 +13,7 @@ sudo apt install -y git
 ## Install
 
 ```bash
-git clone git@github.com:matteocrippa/elementaryOS-setup-script.git eos-setup
+git clone https://github.com/matteocrippa/elementaryOS-setup-script.git eos-setup
 cd eos-setup
 chmod +x script.sh
 ./script
