@@ -25,7 +25,7 @@ sudo chsh -s $(which zsh)
 sudo npm i -g spaceship-prompt --unsafe-perm=true --allow-root
 
 # Install codecs
-sudo apt install -y ubuntu-restricted-extras libavcodec-extra libdvd-pkg
+sudo apt install -y ubuntu-restricted-extras libavcodec-extra
 
 # Vlc
 sudo apt install -y vlc
@@ -34,16 +34,16 @@ sudo apt install -y vlc
 sudo apt install -y chromium-browser firefox
 
 # Backup
-sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo add-apt-repository ppa:teejee2008/ppa
 sudo apt-get update
 sudo apt-get install -y timeshift
 
 # Tweak system
-sudo add-apt-repository ppa:mpstark/elementary-tweaks-daily
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks
 sudo apt-get update
-sudo apt-get install elementary-tweaks
+sudo apt-get install -y software-properties-common elementary-tweaks
 
 # Cleanup
 sudo apt-get autoclean
-sudo apt-get autoclean
+sudo apt-get clean
 sudo apt-get autoremove
