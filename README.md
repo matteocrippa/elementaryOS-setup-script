@@ -15,6 +15,6 @@ sudo apt install -y git
 ```bash
 git clone https://github.com/matteocrippa/elementaryOS-setup-script.git eos-setup
 cd eos-setup
-chmod +x script.sh
+chmod +x setup.sh
 ./script
 ```
